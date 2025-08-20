@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mostrar Imagen al Hacer Clic</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            overflow: hidden; /* Opcional: para evitar el scroll en la página */
+        }
+
+        #showImageButton {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 0;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            z-index: 1000;
+        }
+
+        #showImageButton img {
+            width: 50px; /* Ajusta el tamaño del logo */
+            height: auto;
+        }
+
+        #imageContainer {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: none;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            z-index: 1000;
+        }
+
+        #imageDisplay {
+            max-height: 80vh;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <button id="showImageButton">
+        <img src="./img/imagen.png" alt="Logo"> <!-- Reemplaza 'logo.png' con el nombre de tu logo -->
+    </button>
+    <div id="imageContainer">
+        <img id="imageDisplay" src="./img/IMA.png" alt="Imagen">
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const showImageButton = document.getElementById('showImageButton');
+            const imageContainer = document.getElementById('imageContainer');
+
+            showImageButton.addEventListener('click', () => {
+                imageContainer.style.display = 'block';
+            });
+
+            imageContainer.addEventListener('click', () => {
+                imageContainer.style.display = 'none';
+            });
+        });
+    </script>
+</body>
+</html>

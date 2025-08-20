@@ -1,0 +1,178 @@
+.titulo h1{
+    text-align: center;
+    font-family: 'Lobster';
+    margin-bottom: 20px;
+}
+
+.contenedor_formulario{
+   background-image: url("../img/awsqwq_5.jpg");
+   width: 100%;
+ 
+   padding: 3%;
+   border-radius: 2rem;
+   margin-bottom: 10px;
+}
+
+
+
+.seleccion{
+     border: none;
+     border: 1px solid #ccc;
+     border-radius: 10px;
+     outline: none;
+     height: 50px;
+     width: 99%;
+     color: #000;
+     font-size: 20px;
+     margin-bottom: 20px;
+     font-family: 'Inconsolata', monospace;
+     font-weight: 400;
+}
+
+#enviar{
+    width: 99%;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid #000;
+    font-family: 'Inconsolata', monospace;
+    font-size: 18px;
+    background: #134E5E;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #71B280, #134E5E);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #71B280, #134E5E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: azure;
+    cursor: pointer; 
+    margin: 5px;
+}
+
+.titulo img{
+    width: 80px;
+    display: inline-block;
+}
+
+.titulo li{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.ll{
+    font-size: 30px;
+    padding-left: 5px;
+}
+
+label{
+    color: #fff;
+}
+
+.consulta{
+    color: #ffff;
+    font-family: 'Lobster';
+    text-align: center;
+    font-weight: 800;
+    margin-bottom: 100px;
+}
+
+
+#formulario{
+    position: absolute;
+
+top: 1980px;
+  width: 100%;
+ 
+
+  background-color: rgb(0, 0, 0,0.3);
+  padding: 10px 0px 10px 0px;
+}
+    #prueba{
+        position: absolute;
+  
+ 
+    top: 770px;
+      width: 100%;
+    
+
+      background-color: rgb(0, 0, 0,0.3);
+      padding: 10px 0px 10px 0px;
+    }
+    
+
+.input01{
+    border: 1px solid #ccc;
+    border-radius: 13px;
+    height: 50px;
+    width: 35%;
+    background: rgb(0, 0, 0,0.3);
+    color: #fff;
+    
+    
+}
+
+.botin{
+    background: #134E5E;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #71B280, #134E5E);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #71B280, #134E5E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: 'Inconsolata', monospace;
+    color: #fff;
+    height: 50px;
+    width: 35%;
+    border-radius: 7px;
+    margin-left: 43px;
+}
+
+.input01::placeholder {
+    color: #ffff;
+    }
+
+.otra{
+    position: static;
+}
+
+
+
+.prueba form{
+    margin-top: 100px;
+}
+
+@keyframes conexion {
+    0% { background-color: #fff; box-shadow: 0 0 5px #fff; }
+    25% { background-color: #66a3ff; box-shadow: 0 0 20px #66a3ff; }
+    50% { background-color: #3366ff; box-shadow: 0 0 40px #3366ff; }
+    75% { background-color: #66a3ff; box-shadow: 0 0 20px #66a3ff; }
+    100% { background-color: #fff; box-shadow: 0 0 5px #fff; }
+  }
+  
+  .conexion {
+    width: 200px;
+    height: 200px;
+    animation: fuego 4s infinite;
+  }
+
+  
+  .conexion {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .conexion h1 {
+    color: #fff;
+    animation: movimiento 3s ease-in-out infinite alternate;
+    display: flex;
+    justify-content: center;
+ 
+    
+  }
+  
+  @keyframes movimiento {
+    0% {
+      transform: translateX(0);
+      box-shadow: 0 0 5px blue;
+    }
+    100% {
+      transform: translateX(600px);
+      box-shadow: 0 0 20px #fff;
+    }
+  }
+  
